@@ -1,5 +1,9 @@
 from collections import defaultdict
 
+"""
+Python -m doctest -v stats-CPO.py
+"""
+
 #Add two numbers
 def add (num1, num2):
     return num1 + num2
