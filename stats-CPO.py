@@ -1,4 +1,4 @@
-print ("Hello world")
+from collections import defaultdict
 
 #Add two numbers
 def add (num1, num2):
@@ -11,20 +11,8 @@ def rectvol(length, width, height):
     return (length * width * height)
 
 #Find the mean of a list of numbers
-def mean (numbers):
-    count_num = len(numbers)
-    sum_num = sum(numbers)
-    return sum_num/count_num
-
-def meaner(numbers):
+def mean(numbers):
     return sum(numbers)/len(numbers)
-
-#Find the even
-def even(numbers):
-    if((numbers % 2) == 1):
-        print("number is odd")
-    else:
-        print("number is number")
 
 def median(numbers):
     """
@@ -56,7 +44,6 @@ def mode(numbers):
     >>> mode([6,6,6,8,8,7])
     6
     """
-    from collections import defaultdict
     d = defaultdict(int)
     for num in numbers:
         d[num]+=1
